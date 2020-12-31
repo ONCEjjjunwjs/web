@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>히힛</title>
+
+    <link rel="shortcut icon" href="https://www.iconarchive.com/download/i60094/mattahan/ultrabuuf/Young-Lion.ico">
+
+    <meta property="og:image"content="https://www.smallbizdaily.com/wp-content/uploads/2020/12/shutterstock_1689506104.jpg">
+    <meta property="og:title" content="히힛">
+    <meta property="og:description" content="ㅋ">
+
+    <script src="https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/xmas/snow.js"></script>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Gaegu:wght@300;400&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            font-family: 'Gaegu', cursive;
+        }
+
+        body {
+            background-color: rgb(255, 234, 198);
+        }
+
+        .envelope {
+            width: 200px;
+            height: 200px;
+
+            background-image: url('https://pngimg.com/uploads/envelope/envelope_PNG18366.png');
+            background-position: center;
+            background-size: cover;
+
+            margin: 200px auto 0px auto;
+
+            cursor: pointer;
+        }
+
+        .envelope-msg {
+            color: black;
+            text-align: center;
+        }
+
+        .letter-close {
+            display: block;
+        }
+
+        .letter-open {
+            display: none;
+        }
+
+        .ryan {
+            background-color: white;
+
+            width: 200px;
+            height: 200px;
+
+            background-image: url('https://lh3.googleusercontent.com/proxy/VSzdmFP59YRzfbmEqAqv1FoCCIjhFJMMCVCT9OvCLYMVgj8TDsapRcmORgrwP7Uhm25wo7QfhKoqNiTu0uYvmm8FRZA0UKoRQFmKtHc-mjBeJOGXW9a3qrraI9tB_HFLtnn1N9udub9MEkK2jqgBs4mtmueA-TekIh1CzOo8RcX0eBSG_t1cs_MkGAkSNn01lQ2M0fj1kpthj8nfUOUSQb3glbiCLZ8rDshMcXTfZde5-JJEqH-dwsLC6uIIqx1G_fxE9Q_4lUztoA37Y_OdqoaxoGzHlsXrtw');
+            background-size: cover;
+            background-position: center;
+
+            margin: 100px auto 0px auto;
+
+            border-radius: 100px;
+            border: 3px solid black;
+            box-shadow: 0px 0px 10px 0px palevioletred;
+        }
+
+        h1 {
+            text-align: center;
+
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+
+        .msgbox {
+            background-color: rgb(97, 22, 22);
+            color: white;
+
+            width: 400px;
+            margin: auto;
+
+            padding: 30px;
+            border-radius: 5px;
+
+            font-size: 20px;
+            line-height: 30px;
+
+            box-shadow: 0px 0px 10px 0px palevioletred;
+        }
+
+        .from {
+            text-align: right;
+            margin: 0px;
+        }
+
+        @media screen and (max-width: 667px) {
+            .msgbox {
+                width: 300px;
+                padding: 20px;
+
+            }
+
+            .ryan {
+                width: 150px;
+                height: 150px;
+                margin: 90px auto 0px auto;
+            }
+
+            h1 {
+                font-size: 28px;
+            }
+
+        }
+    </style>
+
+    <script>
+        function open_letter() {
+            document.getElementsByClassName("letter-close")[0].style.display = 'none'
+            document.getElementsByClassName("letter-open")[0].style.display = 'block'
+        }
+        function click_ryan() {
+            alert('어헛, 라이언 건들지 마라.');
+            window.location.href = 'https://lh3.googleusercontent.com/proxy/s0owUcLRb57G8yfn-hel31qNiyxhwR7Ckj_YCJuqT2vm5L-x2w801AZSOJ-hGNdMB61pbnP87rOAtGAz81GeA_QZDQVUDyfbzgfrd2778LTdR3XnC1Y096tnEL4y_GxHL2TOwBMBjIm9-qyeh4oApYvj2LfoikSSsOwCamq202Yi7oErC68FumR1vTQ'
+        }
+    </script>
+
+</head>
+
+<body>
+    <div class="letter-close">
+        <div class="envelope" onclick="open_letter()"></div>
+        <h2 class="envelope-msg">오픈 댓 봉투!</h2>
+    </div>
+
+    <div class="letter-open">
+        <div class="ryan" onclick="click_ryan()"></div>
+        <h1>2020년 수고 많았어!</h1>
+        <div class="msgbox">
+            연이에게. <br />
+            너어는 정말 레전드다 <br />
+            이러다 한 평생을 못 잊어 먹겠어 <br />
+            덕분에 많이 웃을 수 있었던 한 해였고 <br />
+            내년엔 더 잘 부탁할게 <br />
+            <p class="from">2020.12.31 준</p>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
